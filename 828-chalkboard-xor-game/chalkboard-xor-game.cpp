@@ -12,6 +12,7 @@ public:
             for(int i=0; i<n; i++)
             {
                 xorr = (xorr ^ nums[i]);
+            
             }
             if(xorr==0)
             return true;
