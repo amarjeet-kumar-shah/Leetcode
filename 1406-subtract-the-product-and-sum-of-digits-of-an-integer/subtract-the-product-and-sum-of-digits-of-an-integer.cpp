@@ -1,16 +1,17 @@
 class Solution {
 public:
     int subtractProductAndSum(int n) {
-        int prod = 1;
         int sum =0;
-        int digit;
+        int prod =1;
+        int a;
         while(n!=0){
-            digit = n%10;
-           sum = sum + digit;
-           prod = prod *digit;
-            n = n/10;
-
+           a = n %10;
+           n = n/10;
+           prod = prod * a;
+           sum = sum + a;
         }
-        return prod - sum;
+        int ans = prod - sum;
+
+        return ans ;
     }
 };
